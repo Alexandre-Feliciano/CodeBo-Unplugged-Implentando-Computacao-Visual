@@ -21,15 +21,17 @@ ponto_chave5, descritores5 = orb.detectAndCompute(EmpilharRobo, None)
 
 # Comparando os descritores das imagens usando o método de força bruta (Brute Force)
 
-bf = cv2.BFMatcher()
+print(descritores3[0])
 
-matches1 = bf.match(descritores1, descritores1, k=2)
+# bf = cv2.BFMatcher()
 
-boa = []
+# matches1 = bf.match(descritores1, descritores1, k=2)
 
-for m, n in matches1:
-    if m.distance < 0.75 * n.distance:
-        boa.append([m])
+# boa = []
+
+# for m, n in matches1:
+#     if m.distance < 0.75 * n.distance:
+#         boa.append([m])
 
 
 # ImgPontoChave1 = cv2.drawKeypoints(SetaFrente, ponto_chave1,None)
